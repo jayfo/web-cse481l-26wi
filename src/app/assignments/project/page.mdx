@@ -1,0 +1,574 @@
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { default as ContributionStatementsReference } from "@/content/ContributionStatementsReference.mdx";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+
+export const pathPosterTemplateA = '/assignments/poster-template-a-32x40.pptx';
+export const pathPosterTemplateB = '/assignments/poster-template-b-32x40.pptx';
+export const pathPosterTemplateC = '/assignments/poster-template-c-32x40.pptx';
+
+# Project
+
+<UnderDevelopment display={false} />
+
+## Deliverables
+
+### Introduction and Idea
+
+Prepare and present 2 slides, in the provided presentation shared by the entire class:
+- 1 slide introducing yourself to the class.
+- 1 slide introducing an idea for a project direction.
+
+Presentation will be limited to 2 minutes.
+
+**Slides Due:** Wed Apr 2, 8pm
+
+**Presentation:** In-Class, Thu Apr 3
+
+&nbsp;
+
+### Group Brainstorm
+
+As a potential group, brainstorm 3 possible project directions, in the provided document shared by the entire class:
+- Must be submitted with a group, as represented in the provided signup document.
+- Group membership may also continue to evolve after this assignment.
+- Each idea must not exceed 100 words.
+- Images may be included and do not count against the word limit.
+- Possible project directions may draw inspiration from anything.
+  They must also credit any major inspiration.
+
+Submit via Canvas.
+
+All members of a project group should submit the PDF
+(i.e., because this is easiest for course staff while groups are still potentially in flux).
+
+**Due:** Wed Apr 9, 8pm
+
+&nbsp;
+
+### Groups Finalized
+
+Finalize a project group in the provided signup document shared by the entire class.
+
+**Due:** Sun Apr 13, 8pm
+
+&nbsp;
+
+### Design Proposal
+
+Submit a design proposal that does not exceed 1000 words.
+- Author this assignment in the Drive folder corresponding to your project group.
+- Create a subfolder called "Design Proposal", keep all documents in this folder.
+- Begin by copying the provided template document.
+- Include images where helpful to illustrate your design.
+- Images do not count against the word limit.
+
+Include the following sections:
+- Describe the overall concept of your design.
+  - This must not exceed 100 words.
+  - An overall design concept might be more than you can implement in this course.
+- Describe the elements of your design within which you will focus your exploration of human-AI interaction.
+  - This must not exceed 150 words.
+  - Vertical prototyping emphasizes deep exploration of a portion of an overall design.
+    Describe what you intend to deeply design and implement.
+    Ensure this portion of your design emphasizes human-AI interaction.
+  - Briefly describe any key aspects of your overall design concept that you will not aim to design and implement.
+    Describe how you anticipate your design process mocking or working around these omissions.
+- Illustrate 3 primary task scenarios.
+  Recall a scenario demonstrates how a task is accomplished with a design.
+  - Each scenario must not exceed 200 words.
+  - In one sentence, describe the task (i.e., what is accomplished).
+  - Use images to illustrate the scenario via a walkthrough of each key step in accomplishing the task with your design.
+    These can be sketches, mockups, or other illustrations of how a person will experience the scenario.
+  - Convey the walkthrough in enough detail that course staff can understand step-by-step interaction with your design.
+    We expect each scenario will include multiple images, but do not expect more than 6 images in a scenario.
+    In the next formative research assignment,
+    you will use these scenarios as part of describing your design and seeking feedback from formative research participants.
+  - Any text used in the walkthrough does not count against the word limit.
+  - Describe your initial exploration of language model support needed in the proposed interaction.
+    Consider when and how your design will invoke the language model throughout the scenario.
+    Consider the expected input and output for these language model invocations.
+    Consider exploring specific prompts,
+    such as by using conversational AI tools or Python notebooks to probe the capabilities needed in your scenario.
+  - Summarize key activities and learnings in your initial exploration of language model support.
+    If understanding those requires additional supporting documentation,
+    provide that in the same folder in a human-readable format (e.g., another document, PDFs).
+    Appropriately reference this supporting documentation in your description.
+    We do not intend this to be a burden,
+    so you may decide whether you feel such documentation is necessary for engaging with course staff around your design.
+- Reflect upon your design proposal relative to a principle of human-AI interaction
+  (e.g., a principle articulated in one of the papers discussed in "Principles of Human-AI Interaction").
+  - This must not exceed 150 words.
+  - Begin by stating and crediting the principle, then reflect on your design proposal relative to that principle.
+  - This reflection should focus on a goal for formative research relative to the principle.
+    This will require identifying a principle that is relevant to one or more elements of your design proposal,
+    then reflecting on the need to more thoroughly explore these elements of your design relative to the principle.
+    Consider what decisions you might aim to make, what you might aim to learn,
+    or how your design might evolve in response to formative research.
+
+Submit via Canvas.
+
+**Due:** Mon Apr 21, 8pm
+
+&nbsp;
+
+### Formative Research
+
+Submit formative research that does not exceed 1200 words.
+- Author this assignment in the Drive folder corresponding to your project group.
+- Create a subfolder called "Formative Research", keep all documents in this folder.
+- Begin by copying the provided template document.
+- Include images where helpful to illustrate your research.
+- Images do not count against the word limit.
+
+Include the following sections:
+- Report on formative research with 2 participants.
+  - Each must not exceed 250 words.
+  - We generally expect groups will choose to conduct interviews around their design proposal
+    (e.g., seeking feedback on the overall concept and on details of specific scenarios).
+    However, you can choose a research method that is appropriate for your goals.
+  - Describe the formative research method used with each participant
+    (e.g., what you aimed to learn,
+    key details of how you applied your method,
+    who the participant was and why you recruited them).
+  - Summarize the most important findings from the session.
+    These will be actionable opportunities or insights that changed or refined your thinking about your design.
+  - Include specific evidence from your research to support your findings.
+    We generally expect this will be quotes or other specific feedback from the participant.
+- Report on formative research with an AI.
+  - This must not exceed 250 words.
+  - Because language models can encode human experiences,
+    it has been proposed that they can support design research.
+    For example, see [Simulating the Human in HCD with ChatGPT: Redesigning Interaction Design with AI](https://doi.org/10.1145/3637436).
+  - Describe an exploration of trying to use an AI to gain insights into your design problem or proposed solution.
+    For example, describe what types of insights you hoped AI might provide,
+    how you explored its ability to provide those insights,
+    and how you iterated in your prompting throughout that exploration.
+  - If your exploration proves useful, detail the insights that you surfaced.
+    These will be actionable opportunities or insights that changed or refined your thinking about your design.
+  - If your exploration does not prove useful, detail why you feel AI responses were not helpful.
+    Describe what you tried in your exploration of whether you could obtain more helpful AI responses.
+  - Include specific evidence from your exploration to support your findings.
+    We generally expect this will be excerpts of specific prompts or responses that illustrate your findings.
+- Summarize changes to your design based on your formative research findings.
+  - This must not exceed 150 words.
+  - Describe how your findings prompted you to changes aspects of your design,
+    being sure to describe the relationship between findings and the resulting changes
+  - If your findings have not motivated changes,
+    instead describe how findings validate specific aspects of your existing design.
+  - Note you will separately provide updated task scenarios.
+- Describe your planned technology stack.
+  - This must not exceed 150 words.
+  - Describe a specific combination of technologies you plan to use to implement your design.
+  - Provide a rationale for choosing this technology stack.
+    For example, note alternatives you considered and why you prefer your chosen combination.
+- Reflect upon your formative research relative to a principle of human-AI interaction
+  (e.g., a principle articulated in one of the papers discussed in "Principles of Human-AI Interaction").
+  - This must not exceed 150 words.
+  - Begin by stating and crediting the principle, then reflect on your formative research relative to that principle.
+  - This reflection should focus on a specific finding and how it motivated changes or validated your design.
+    This will require identifying a principle that is relevant to one or more elements of your design,
+    then considering your findings and changes relative to the principle.
+    Consider how the finding shaped new understanding of the principle,
+    how your changes align with or were informed by the principle,
+    or how the principle highlights a challenge or design tension around the finding.
+
+Submit a Design Status Report as a separate document.
+  - Follow guidance in <SiteLink linkKey={SiteLinks.assignmentsProjectDesignStatusReports}/>.
+
+Submit via Canvas.
+
+**Due:** Wed Apr 30, 8pm
+
+&nbsp;
+
+### Interactive Prototype
+
+Continue design and development,
+implementing at least one of the task scenarios in your interactive prototype.
+
+Submit an update on your interactive prototype that does not exceed 500 words.
+- Author this assignment in the Drive folder corresponding to your project group.
+- Create a subfolder called "Interactive Prototype", keep all documents in this folder.
+- Begin by copying the provided template document.
+- Include images where helpful to illustrate your prototype.
+- Images do not count against the word limit.
+
+Include the following sections:
+- Describe the task scenarios currently implemented in your interactive prototype.
+  - This does not count against the word limit.
+  - Limit this to a single sentence per implemented task scenario.
+  - These sentences may be taken from the design status report,
+    but you should ensure they reflect what is actually implemented in your interactive prototype.
+- Summarize the most important changes or new details in your design,
+  as developed through your design and implementation efforts in your interactive prototype.
+  - This must not exceed 150 words.
+  - Describe how feedback or work toward implementing the task scenarios prompted you to
+    change aspects of your design or define new details in aspects of your design.
+    Be sure to describe the relationship between your evolving understanding and the resulting changes.
+    For example, describe specific feedback, implementation issues, usability issues, or other issues revealed in your prototyping.
+    Then explain how this prompted you to change or define new detail in your design.
+  - If your progress has not motivated changes or the definition of new details,
+    instead describe how your progress validates specific aspects of your existing design.
+  - If your progress has not required navigating meaningful issues,
+    consider that you may need to change or grow the scope of your design and your scenarios.
+  - Note you will separately provide updated task scenarios in your design status report.
+- Describe one thing you learned or insight you gained through progress in design and development of your prototype.
+  - This must not exceed 200 words.
+  - We are open to a wide range of learning as part of this assignment,
+    including but not limited to learning about
+    designing with and around AI,
+    your chosen interface framework, your chosen AI tool, or their integration in your prototype.
+  - Describe what you learned and how you applied that learning in your prototype.
+- Reflect upon your current interactive prototype relative to a principle of human-AI interaction
+  (e.g., a principle articulated in one of the papers discussed in "Principles of Human-AI Interaction").
+  - This must not exceed 150 words.
+  - Begin by stating and crediting the principle, then reflect on your interactive prototype relative to that principle.
+  - This reflection should focus on a specific aspect of your implementation,
+    which could be a technical detail of your implementation
+    or could be a change or new detail in your design.
+    This will require identifying a principle that is relevant to one or more elements of your design,
+    then considering your design and implementation progress relative to the principle.
+    Consider how progress in design or implementation shaped new understanding of the principle,
+    how your design or implementation aligns with or was informed by the principle,
+    or how the principle highlights a challenge or design tension around your implementation.
+
+Submit a Design Status Report as a separate document.
+- Follow guidance in <SiteLink linkKey={SiteLinks.assignmentsProjectDesignStatusReports}/>.
+- Be sure the report captures your current thinking for all task scenarios,
+  including any you have not yet implemented in your prototype.
+
+Submit a video demonstrating key functionality of your interactive prototype.
+- Must not exceed 2 minutes in length per demonstrated task scenario.
+- Include narration explaining how the task scenario is supported in the prototype.
+
+Ensure the full code of your interactive prototype is committed to your GitLab project.
+- Include a brief README.md that details how to build and run your prototype.
+- You may choose to omit an API key needed to run your prototype.
+  If so, clearly document such additional necessary configuration in the README.
+- Be responsive to any questions from the course staff regarding your prototype.
+
+Submit via Canvas.
+
+**Due:** Sun May 11, 8pm
+
+&nbsp;
+
+### Revised Prototype
+
+Continue design and development,
+implementing at least two of the task scenarios in your interactive prototype.
+
+Collaborate with assigned groups to conduct two peer critiques, using the provided template.
+
+Submit an update on your interactive prototype that does not exceed 600 words.
+- Author this assignment in the Drive folder corresponding to your project group.
+- Create a subfolder called "Revised Prototype", keep all documents in this folder.
+- Begin by copying the provided template document.
+- Include images where helpful to illustrate your prototype.
+- Images do not count against the word limit.
+
+Include the following sections:
+- Describe the task scenarios currently implemented in your interactive prototype.
+  - This does not count against the word limit.
+  - Limit this to a single sentence per implemented task scenario.
+  - These sentences may be taken from the design status report,
+    but you should ensure they reflect what is actually implemented in your interactive prototype.
+- Summarize the most important changes or new details in your design,
+  as developed through your continuing design and implementation efforts in your interactive prototype.
+  - This must not exceed 250 words.
+  - Describe how feedback or work toward implementing the task scenarios prompted you to
+    change aspects of your design or define new details in aspects of your design.
+    Be sure to describe the relationship between your evolving understanding and the resulting changes.
+    For example, describe specific feedback, implementation issues, usability issues, or other issues revealed in your prototyping.
+    Then explain how this prompted you to change or define new detail in your design.
+  - If your progress has not motivated changes or the definition of new details,
+    instead describe how your progress validates specific aspects of your existing design.
+  - If your progress has not required navigating meaningful issues,
+    consider that you may need to change or grow the scope of your design and your scenarios.
+  - Note you will separately provide updated task scenarios in your design status report.
+- Describe one thing you learned or insight you gained through progress in design and development of your prototype.
+  - This must not exceed 200 words.
+  - We are open to a wide range of learning as part of this assignment,
+    including but not limited to learning about
+    designing with and around AI,
+    your chosen interface framework, your chosen AI tool, or their integration in your prototype.
+  - Describe what you learned and how you applied that learning in your prototype.
+- Reflect upon your current interactive prototype relative to a principle of human-AI interaction
+  (e.g., a principle articulated in one of the papers discussed in "Principles of Human-AI Interaction").
+  - This must not exceed 150 words.
+  - Begin by stating and crediting the principle,
+    then reflect on your interactive prototype relative to that principle.
+  - This reflection should focus on a specific aspect of your progress in design and implementation,
+    which could be a change or new detail in your design
+    or could be a technical detail of your implementation.
+    This will require identifying a principle that is relevant to one or more elements of your design,
+    then considering your design and implementation progress relative to the principle.
+    Consider how progress in design or implementation shaped new understanding of the principle,
+    how your design or implementation aligns with or was informed by the principle,
+    or how the principle highlights a challenge or design tension around your implementation.
+
+Submit a Design Status Report as a separate document.
+- Follow guidance in <SiteLink linkKey={SiteLinks.assignmentsProjectDesignStatusReports}/>.
+- Be sure the report captures your current thinking for all task scenarios,
+  including any you have not yet implemented in your prototype.
+- Be sure implemented scenarios include screen captures, updated from prior sketches.
+
+Submit the two completed peer critiques.
+- Ensure these include your takeaways.
+
+Submit a video demonstrating key functionality of your interactive prototype.
+- Must not exceed 2 minutes in length per demonstrated task scenario.
+- Include narration explaining how the task scenario is supported in the prototype.
+
+Ensure the full code of your interactive prototype is committed to your GitLab project.
+- Include a brief README.md that details how to build and run your prototype.
+- You may choose to omit an API key needed to run your prototype.
+  If so, clearly document such additional necessary configuration in the README.
+- Be responsive to any questions from the course staff regarding your prototype.
+
+**Due:** Sun May 25, 8pm
+
+Submit via Canvas.
+
+&nbsp;
+
+### Poster
+
+<UnderDevelopment display={false} />
+
+Create a poster that communicates your design and related findings, insights, or learnings.
+Present your work in a visual form that quickly conveys its most important aspects. Your poster should include:
+- Project Title
+- Your Names
+- Motivation and Approach
+  - The need, opportunity, or problem explored in your design.
+  - The overall concept of your design and your focus within that concept.
+- Key Human-AI Interaction Functionality
+  - This likely corresponds to your 3 task scenarios.
+- Key Findings, Insights, or Learnings
+  - Include 3 key findings, insights, or learnings.
+  - At least 1 should relate to your interface design.
+  - At least 1 should relate to the underlying use of a language model.
+
+For consistency in printing and display, your poster must be 32" x 40" (i.e., portrait, vertical).
+
+The staff have assembled several templates you can use as a starting point:
+- <a href={Paths.basePath + pathPosterTemplateA}>Powerpoint Template A</a>
+- <a href={Paths.basePath + pathPosterTemplateB}>Powerpoint Template B</a>
+- <a href={Paths.basePath + pathPosterTemplateC}>Powerpoint Template C</a>
+
+You should heavily modify the template to be unique and represent your project:
+
+- Posters are intended to support a conversation about your project.
+- Your poster should emphasize images and include limited amounts of text.
+- Be sure images are clear and legible (e.g., with appropriate contrast).
+- Modify the template colors to ensure your poster is unique.
+
+As you plan content for your poster,
+be mindful that you will also have a demo and a video available during the final poster showcase.
+
+Submit via Canvas.
+Due to frequent challenges in printing, submit both:
+- A PDF of your poster.
+- The source file for your poster (e.g., a PPTX file).
+
+We then expect teams to be available and responsive via email for feedback and rapid iteration to finalize the poster.
+
+**Due:** Fri May 30, 8pm
+
+&nbsp;
+
+### Final Prototype
+
+Continue design and development,
+implementing the three task scenarios in your interactive prototype.
+
+Conduct at least one usability test with a participant.
+The participant may not be a classmate.
+
+Submit a report that does not exceed 750 words.
+
+- Author this assignment in the Drive folder corresponding to your project group.
+- Create a subfolder called "Final Prototype", keep all documents in this folder.
+- Begin by copying the provided template document.
+- Include images where helpful to illustrate your prototype or insights from your usability testing.
+- Images do not count against the word limit.
+
+Include the following sections:
+- Report on the usability testing method used with the participant.
+  - This must not exceed 150 words.
+  - Describe your testing method and participant,
+    emphasizing how you structured usability testing to learn
+    (e.g., how you structured the usability testing sessions,
+    any details of usability testing you designed to support learning about your prototype,
+    how you presented usability testing tasks to participants,
+    any relevant background or details of the participant).
+  - Names of participants should be replaced with pseudonyms in all documents.
+    It is important to protect participant anonymity, even in the case that reporting seems harmless.
+
+- Report on two key insights from your usability testing.
+  - Each insight must not exceed 100 words.
+  - Insights can be issues surfaced in the design of your prototype
+    or observations that validate a key aspect in the design of the prototype.
+  - Include at least one image of the relevant portion of the prototype.
+    This may be directly within this section,
+    or you may clearly reference a specific image in your design status report to provide a larger context.
+  - Describe the specific critical incident or evidence that led to the insight.
+    These can be either positive or negative.
+    We generally expect this will be a quote, other specific feedback from a participant, or a description of an observation.
+
+- Summarize the most important changes or new details in your design,
+  as developed through your continuing design, implementation, and usability testing efforts in your interactive prototype.
+  - This must not exceed 250 words.
+  - Describe how feedback, work toward implementing the task scenarios, or insights from usability testing
+    prompted you to change aspects of your design or define new details in aspects of your design.
+    Be sure to describe the relationship between your evolving understanding and the resulting changes.
+    For example, describe specific feedback, implementation issues, usability issues, or other issues revealed in your prototyping.
+    Then explain how this prompted you to change or define new detail in your design.
+  - If your findings have not motivated changes, instead describe how findings validate specific aspects of your existing design.
+  - Note you will separately provide updated task scenarios in your design status report.
+
+- Reflect upon your current interactive prototype and usability testing relative to a principle of human-AI interaction
+  (e.g., a principle articulated in one of the papers discussed in "Principles of Human-AI Interaction").
+  - This must not exceed 150 words.
+  - Begin by stating and crediting the principle,
+    then reflect on your interactive prototype and usability testing relative to that principle.
+  - This reflection should focus on a specific insight and how it motivates changes or validates your design.
+    This will require identifying a principle that is relevant to one or more elements of your design,
+    then considering your insights and changes relative to the principle.
+    Consider how the insight shaped new understanding of the principle,
+    how your changes align with or were informed by the principle,
+    or how the principle highlights a challenge or design tension around the insight.
+
+Submit a Design Status Report as a separate document.
+- Follow guidance in <SiteLink linkKey={SiteLinks.assignmentsProjectDesignStatusReports}/>.
+- Be sure the report captures your current thinking for all task scenarios,
+  including any you have not yet implemented in your prototype.
+- Be sure implemented scenarios include screen captures, updated from prior sketches.
+
+Submit a video demonstrating key functionality of your interactive prototype.
+- Must not exceed 2 minutes in length per demonstrated task scenario.
+- Include narration explaining how the task scenario is supported in the prototype.
+- As you prepare this video, be mindful of two future needs.
+  - Your presentation may want to use a short video segment to convey an interaction.
+  - We strongly encourage you to create a video that can be silently played on a loop during the poster showcase
+    (e.g., on a laptop or tablet alongside your poster).
+    This could be a silent title slide for each task scenario, then a short video segment of that task scenario.
+- If helpful or needed, you may submit multiple videos in this assignment.
+  Be sure each video is clearly named to indicate what we will see in that video.
+  For example, you might submit a short and polished video conveying the interaction in each task scenario,
+  appropriate for later re-use and without any narration.
+  You might then also submit a longer unedited version of the same video, including narration intended for course staff.
+
+Ensure the full code of your interactive prototype is committed to your GitLab project.
+- Include a brief README.md that details how to build and run your prototype.
+- You may choose to omit an API key needed to run your prototype.
+  If so, clearly document such additional necessary configuration in the README.
+- Be responsive to any questions from the course staff regarding your prototype.
+
+Submit via Canvas.
+
+**Due:** Sun Jun 1, 8pm
+
+&nbsp;
+
+### Presentation
+
+<UnderDevelopment display={false} />
+
+Prepare a presentation of your project:
+- Begin by copying the provided template document.
+
+Your presentation should include:
+- Motivation and Approach
+  - The need, opportunity, or problem explored in your design.
+  - The overall concept of your design and your focus within that concept.
+- 3 Task Scenarios
+  - Briefly convey what the interaction is
+    (e.g., with a few images from a scenario walkthrough, with a short video segment).
+  - Briefly convey a relevant aspect of the implementation.
+    This should typically be about the underlying AI implementation,
+    but you can convey what was most important and unique in implementing this task scenario.
+- 2 Key Findings, Insights, or Learnings
+  - From across the entire project sequence,
+    share a finding, insight, or learning that feels most important or had the most impact on your project.
+
+Presentations should be 6 to 8 minutes in length, which will allow time for discussion and questions.
+
+**Slides Due:** Mon Jun 2, 8pm
+
+**Presentation:** In-Class, Tue Jun 3
+
+&nbsp;
+
+### Poster Showcase
+
+<UnderDevelopment display={false} />
+
+The final poster showcase will be during the same time as class, but in the CSE/Allen atrium.
+The course staff will print your poster, and event staff will provide an easel, a mounting board, and a table.
+
+During the final poster session:
+- You should ensure at least one member of your team is always at your poster.
+- You should otherwise engage with other posters and teams around their work.
+- You should be prepared to further show and discuss your prototype via demo or video.
+
+We strongly encourage you to create a video that can be silently played on a loop during the poster showcase
+(e.g., on a laptop or tablet alongside your poster).
+This could be a silent title slide for each task scenario, then a short video segment of that task scenario.
+
+The final poster showcase is graded only for participation, intended as a celebration of your work.
+
+**Poster Showcase:** In-Class, Thu Jun 5
+
+&nbsp;
+
+## Design Status Reports
+
+Several deliverables include a design status report.
+The format of each design status report is consistent,
+so that you can maintain and evolve such reports throughout the project.
+
+Submit each design status report in a separate document that does not exceed 700 words.
+- Author this in the same Drive folder as the relevant deliverable.
+- Begin by copying the provided template document.
+- Include images where helpful to illustrate your design.
+- Images do not count against the word limit.
+
+Include the following sections:
+- Summarize your current design.
+  Include a brief description of its overall concept
+  and where you are focusing your exploration of human-AI interaction within that overall concept.
+  - This must not exceed 100 words.
+  - Each design status report will include this summary.
+    You may simply copy it forward between deliverables,
+    but should ensure it remains current as your design and your approach evolve in the project.
+- Illustrate 3 primary task scenarios.
+  Recall a scenario demonstrates how a task is accomplished with a design.
+  You will continue updating these task scenarios as you develop your design.
+  - Each scenario must not exceed 200 words.
+  - Each design status report will include your task scenarios.
+    You may copy them forward between assignments,
+    but should ensure they remain current as your design and your approach evolve in the project.
+  - In one sentence, describe the task (i.e., what is accomplished).
+  - Use images to illustrate the scenario via a walkthrough of each key step in accomplishing the task with your design.
+    These can be sketches, mockups, or other illustrations of how a person will experience the scenario.
+    As you develop more of your project, these should become screenshots showing interaction with your design.
+  - Convey the walkthrough in enough detail that course staff can understand step-by-step interaction with your design.
+    We expect each scenario will include multiple images, but do not expect more than 6 images in a scenario.
+  - Any text used in the walkthrough does not count against the word limit.
+  - After the walkthrough, highlight key specific changes or details of your design
+    that are most important for understanding your design.
+    Share a brief rationale for those specific aspects of your design.
+  - Describe your current understanding of language model support needed in the proposed interaction.
+    Consider when and how your design will invoke the language model throughout the scenario.
+    Consider the expected input and output for these language model invocations.
+  - If understanding your approach to language model support requires additional supporting documentation,
+    provide that in the same folder in a human-readable format (e.g., another document, PDFs).
+    Appropriately reference this supporting documentation in your description.
+    We do not intend this to be a burden,
+    so you may decide whether you feel such documentation is necessary for engaging with course staff around your design.

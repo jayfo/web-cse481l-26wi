@@ -1,0 +1,281 @@
+import { Box } from '@mui/material';
+import Image from "next-image-export-optimizer";
+
+import { TBD } from "@/components/TBD";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { default as AssignmentsOverview } from "@/content/AssignmentsOverview.mdx";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks} from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+
+import imgPhotoJames from "public/images/photo_james.jpg";
+import imgPhotoMingyuan from "public/images/photo_mingyuan.jpg";
+
+<UnderDevelopment display={false} />
+
+# Course Overview
+
+## Course Description
+
+This capstone explores the design and development of interactive technologies
+that integrate language models in providing AI-based interactive capabilities.
+Students will explore creating human-AI interactions that address real-world needs and tasks,
+applying principles from human-centered design in support of those interactions.
+Course activities will emphasize student-led discussions of current challenges and approaches,
+a group project exploring vertical prototyping of human-AI interactions,
+and examination of and reflection on designing with and for this emerging space.
+
+This capstone focuses on human-centered design with and around AI:
+- We assume existing experience with human-centered design methods.
+- We assume existing experience with or the ability to learn frameworks for developing interactive applications.
+- We do not assume or expect existing experience developing with or around AI.
+- We do not assume or expect engagement with development of the underlying AI.
+
+Given these expectations, the capstone publishes a pre-req of CSE 340, CSE 440, HCDE 318, or INFO 360.
+
+## Course Staff
+
+{/* TODO: Make a component to clean up this mess of markup */}
+<Box display="flex" flexDirection="row" alignItems="flex-start">
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>James Fogarty</p>
+    <p>he/him</p>
+    <p>
+      {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoJames}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Mingyuan Zhong</p>
+    <p>he/him</p>
+    <p>
+      {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoMingyuan}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+</Box>
+
+## Course Coordination
+
+- **Contact**
+
+  Email course staff at &lt;hai-capstone-staff [at] cs.washington.edu&gt;.
+
+  Please do not email individual course staff.
+  Using the course staff email list promotes both staff coordination and a more prompt response.
+  Emails to individual course staff will typically have the staff email list added to any response.
+
+  Although we will aim to support the use of Ed Discussion for lightweight communication within the course,
+  official course communications will be conducted via email.
+
+- **Course Time & Location**
+
+  Tuesdays & Thursdays, 10:00-11:20.
+
+  [Bagley](https://www.washington.edu/maps/#!/BAG)
+  Room [108](https://www.washington.edu/classroom/BAG+108).
+
+  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any change in time, location, or staffing.
+
+- **Office Hours**
+
+  By appointment.
+
+- **Canvas**
+
+  <CourseDataLink linkKey={courseData.linkCanvas} outerComponent="p"/>
+
+- **Ed Discussion**
+
+  <CourseDataLink linkKey={courseData.linkEdDiscussion} outerComponent="p"/>
+
+- **Drive**
+
+  <CourseDataLink linkKey={courseData.linkDrive} outerComponent="p"/>
+
+- **GitLab**
+
+  <CourseDataLink linkKey={courseData.linkGitLab} outerComponent="p"/>
+
+Course information and material will primarily be provided on this website.
+
+Clarifications and updates may be issued as part of class.
+Although we will aim to ensure such updates are also captured on this website or in email,
+students will be considered responsible for announcements made in class.
+
+Canvas and Drive will be used when appropriate for limiting access to course information and materials.
+
+## Assignments
+
+<AssignmentsOverview />
+
+## Grading
+
+Strive to do good work because you care about your own opportunities to learn,
+including the opportunities this course provides working with a group in an intensive project.
+
+Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
+The stated project requirements are often the minimum,
+intended to leave room for groups to earn strong grades through strong work.
+
+### Assignment Grading
+
+<UnderDevelopment display={false} />
+
+Individual assignments will typically be graded on a scale from ⭐⭐⭐⭐⭐ to ⭐.
+
+This is intended to be roughly be interpreted as:
+
+- ⭐⭐⭐⭐⭐: Exceeds Expectations.
+
+  Such work is very strong.
+  This is above what is expected and will not be a common grade.
+  This allows course staff to indicate appreciation of very strong work,
+  going above already high course expectations.
+
+- ⭐⭐⭐⭐: Meets Expectations.
+
+  Such work is strong.
+  The course sets high expectations,
+  and course staff feel this work meets those expectations.
+  For example, the course staff is unlikely to have any specific objection to the work.
+  The course staff may also not have any specific suggestions for improvement.
+
+- ⭐⭐⭐: Near Expectations.
+
+  Such work is reasonable, but seems to leave room for improvement.
+  There might be some clear concern or limitation,
+  or there might be several issues which are individually minor but collectively a concern or limitation.
+  Alternatively, the work might be appropriately executed,
+  but may seem to have lacked ambition relative to expectations.
+
+- ⭐⭐: Problematic.
+
+  Such work seems to fall short of the learning goals of the course.
+  It may have met some minimal standard,
+  but did not demonstrate the initiative and leadership expected in the course.
+
+- ⭐: Insufficient.
+
+  Such work does not accomplish the intended goal of the assignment.
+
+Assignment grading will focus on the work itself,
+not yet attempting to account for any group or individual adjustments (e.g., for late submissions, for contribution).
+Any such adjustments will be applied later as part of course grading.
+
+### Course Grading
+
+<UnderDevelopment display={false} />
+
+Much of the grading in this course is necessarily subjective.
+We will attempt to communicate expectations and feedback throughout the course,
+but it is your responsibility to communicate with us if you would like additional guidance in this regard.
+
+The overall course grade will be computed as follows:
+
+- **50%: Group Project.**
+
+  As described in <SiteLink outerComponent="span" linkKey={SiteLinks.assignmentsProjectTop} />
+
+- **10%: Individual Assignments Culminating in Group Project Formation.**
+
+  As described in <SiteLink outerComponent="span" linkKey={SiteLinks.assignmentsProjectTop} />
+
+- **15%: Technology Lab.**
+
+  As described in <SiteLink outerComponent="span" linkKey={SiteLinks.assignmentsTechnologyLabTop} />
+
+- **15%: Student-Led Paper Presentations and Discussion Facilitation.**
+
+  As described in <SiteLink outerComponent="span" linkKey={SiteLinks.assignmentsPaperPresentationsTop} />.
+
+- **10%: Participation.**
+
+  A participation grade corresponds to course goals for students to actively develop skills in
+  discussing design, implementation, and principles of human-AI interaction.
+  Participation will therefore include engagement with in-class discussions and other course activities.
+
+If necessary, the grades of specific assignments may also be adjusted based on participation and contribution.
+
+### Late Policy
+
+We generally expect all assignments will be submitted according to assignment deadlines.
+If there is a constraint or an emergency impacting your ability to submit an assignment,
+contact the course staff before the assignment deadline by email to the course staff list.
+
+We will do our best to be accommodating amidst requirements and expectations of the course
+(e.g., expecting clear and early communication regarding constraints,
+understanding that assignments support engagement throughout the course,
+understanding that missed assignment deadlines may undermine assignment utility or opportunities for feedback).
+
+### Regrade Policy
+
+Any request for grade clarification or a re-grade must be submitted by email to the course staff list.
+Requests will only be considered within 7 days of the release of a grade.
+
+Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
+(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
+This is intended to provide peace of mind that final grades were not defined by any minor aspect of grading.
+
+## Expectation of In-Person Participation
+
+The course heavily emphasizes required in-person activities,
+including student-led presentations and discussions.
+Remote participation will not be supported.
+Full engagement with and contribution in group project activities also requires in-person participation.
+In-person participation is therefore a required component of the course,
+and will be included in participation grading.
+In-person participation can also further impact grading of other course activities.
+
+### Absence-Related Communication
+
+If you will be absent for any reason, contact the course staff before class by email to the course staff list.
+We will track absence-related communication as part of the expectation of in-person participation,
+including any context you want to share about the need for an absence.
+We will do our best to be accommodating amidst requirements and expectations of the course.
+
+### COVID-19 Safety, Recordings, and Zoom
+
+There may be reasons you cannot or should not participate in-person, including COVID-19 exposure or symptoms.
+Our goal is for this course to provide an opportunity for learning without undermining safety,
+and we all share responsibility for preserving safety of this learning environment.
+Please review and adhere to COVID-19 related guidance, including:
+
+<CourseDataLink linkKey={courseData.linkUniversityCovidGuidelines} outerComponent="p"/>
+
+We will aim to record course sessions (e.g., unless a guest indicates they do not want to be recorded).
+Recorded sessions will be available for review within
+<CourseDataLink linkKey={courseData.linkCanvas}>Canvas</CourseDataLink>.
+However, we expect recordings will be of relatively poor quality
+and they are obviously an incomplete proxy for a discussion-focused course.
+Nevertheless, recording may sometimes be the best available option.
+
+We may also use Zoom as an accommodation (e.g., due to illness, due to requirements of a guest).
+Zoom participation will use meeting information provided by email and in
+<CourseDataLink linkKey={courseData.linkCanvas}>Canvas</CourseDataLink>.
+
+## Accommodations and University Policies
+
+Additional university policies apply
+(e.g., regarding Academic Integrity, Conduct, Disability Resources, Face Coverings, Religious Accommodations):
+
+<CourseDataLink linkKey={courseData.linkUniversitySyllabusGuidelines} outerComponent="p"/>
+
+Please do not hesitate to contact the course staff regarding these or any other accommodations.
+We are happy that you are here and want to support your engagement in this learning environment.
+
+## Contributing
+
+This course website lives on GitHub:
+
+<CourseDataLink linkKey={courseData.linkGitHub} outerComponent="p"/>

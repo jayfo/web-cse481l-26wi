@@ -22,7 +22,7 @@ export type OfferingData = {
 
 export const offeringData: OfferingData = {
   // Link to Canvas.
-  linkCanvas: "https://canvas.uw.edu/courses/1798621",
+  linkCanvas: "https://canvas.uw.edu/courses/1860401",
   // Link to Canvas Paper Presentations.
   linkCanvasPaperPresentation1DraftSlides: "https://canvas.uw.edu/courses/1798621/assignments/10253217",
   linkCanvasPaperPresentation1ContributionStatement: "https://canvas.uw.edu/courses/1798621/assignments/10254648",
@@ -43,8 +43,6 @@ export const offeringData: OfferingData = {
 // Data from previous offering. To help track what still needs updated.
 //
 // export const offeringData: OfferingData = {
-//     // Link to Canvas.
-//     linkCanvas: "https://canvas.uw.edu/courses/1798621",
 //     // Link to Canvas Paper Presentations.
 //     linkCanvasPaperPresentation1DraftSlides: "https://canvas.uw.edu/courses/1798621/assignments/10253217",
 //     linkCanvasPaperPresentation1ContributionStatement: "https://canvas.uw.edu/courses/1798621/assignments/10254648",
@@ -58,7 +56,5 @@ export const offeringData: OfferingData = {
 //     linkEdDiscussion: "https://edstem.org/us/courses/77347/discussion",
 //     // Link to course GitLab.
 //     linkGitLab: "https://gitlab.cs.washington.edu/cse481l-25sp",
-//     // Link to course GitHub.
-//     linkGitHub: "https://github.com/uwcse481/web-cse481l-26wi",
 //   } as const;
   

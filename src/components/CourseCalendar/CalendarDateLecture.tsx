@@ -6,7 +6,7 @@ import { CalendarItemDiscussionPapers } from "@/components/CourseCalendar/Calend
 import { CalendarItemGuests } from "@/components/CourseCalendar/CalendarItemGuests";
 import { CalendarItemTimeAndLocations } from "@/components/CourseCalendar/CalendarItemTimeAndLocations";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
-import { formatCalendarDate, parseCalendarDate } from "@/data/CalendarData";
+import { formatCalendarDate, parseCalendarDate } from "@/data/CalendarUtils";
 import {
   CalendarDate,
   CalendarItem,

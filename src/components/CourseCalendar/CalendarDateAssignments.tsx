@@ -3,7 +3,7 @@ import * as React from "react";
 import { CalendarItemAssignments } from "@/components/CourseCalendar/CalendarItemAssignments";
 import { CalendarItemGuests } from "@/components/CourseCalendar/CalendarItemGuests";
 import { CalendarItemTimeAndLocations } from "@/components/CourseCalendar/CalendarItemTimeAndLocations";
-import { formatCalendarDate, parseCalendarDate } from "@/data/CalendarData";
+import { formatCalendarDate, parseCalendarDate } from "@/data/CalendarUtils";
 import {
   AssignmentCalendarItem,
   CalendarDate,

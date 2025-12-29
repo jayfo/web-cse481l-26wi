@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { formatCalendarDate } from "@/data/CalendarData";
+import { formatCalendarDate } from "@/data/CalendarUtils";
 import { AssignmentCalendarItem } from "@/types/CalendarData";
 import { OuterComponent } from "@/types/OuterComponent";
 import Box from "@mui/material/Box";

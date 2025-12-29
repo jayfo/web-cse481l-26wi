@@ -1,13 +1,17 @@
 import * as React from "react";
 
-import { ok as assert } from "assert";
-
 import { FormattedReading } from "@/components/FormattedReading";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { default as ContentContributionsInHCI } from "@/content/ContributionsInHCI.mdx";
 import { default as ContentNoReading } from "@/content/NoReading.mdx";
 import { default as ContentVisionsOfHCI } from "@/content/VisionsOfHCI.mdx";
 import { SiteLinks } from "@/data/SiteLinks";
+import {
+  verifyCalendarDate,
+  calendarDates as calendarDatesUtil,
+  calendarWeeks as calendarWeeksUtil,
+  calendarItemsForDate as calendarItemsForDateUtil,
+} from "@/data/CalendarUtils";
 import {
   AssignmentCalendarItem,
   AwayCalendarItem,
@@ -20,26 +24,6 @@ import {
   OfficeHourCalendarItem,
   StudioCalendarItem,
 } from "@/types/CalendarData";
-import {
-  clamp as clampDate,
-  format as datefnsFormat,
-  isValid as datefnsIsValid,
-  parse as datefnsParse,
-  eachDayOfInterval,
-  eachWeekOfInterval,
-  endOfWeek,
-} from "date-fns";
-
-const dayOfWeekValues = [
-  "Mon",
-  "Tue",
-  "Wed",
-  "Thu",
-  "Fri",
-  "Sat",
-  "Sun",
-] as const;
-type dayOfWeek = (typeof dayOfWeekValues)[number];
 
 const TIME_AND_LOCATION_LECTURE = {
   time: "10:00 to 11:20",
@@ -51,50 +35,18 @@ const TIME_AND_LOCATION_SHOWCASE = {
   location: "CSE/Allen Atrium",
 };
 
-export function parseCalendarDate(calendarDate: CalendarDate): Date {
-  const parsedDate = datefnsParse(calendarDate, "yyyy-MM-dd", new Date());
-  assert(datefnsIsValid(parsedDate), `Invalid date: ${calendarDate}`);
-
-  return parsedDate;
-}
-
-export function formatCalendarDate(
-  calendarDate: CalendarDate,
-  format: string,
-): string {
-  return datefnsFormat(parseCalendarDate(calendarDate), format);
-}
-
 export function calendarDates(): CalendarDate[] {
-  return eachDayOfInterval({
-    start: parseCalendarDate(calendarData.datesOfInstruction.start),
-    end: parseCalendarDate(calendarData.datesOfInstruction.end),
-  }).map((dateCurrent: Date): CalendarDate => {
-    return datefnsFormat(dateCurrent, "yyyy-MM-dd");
-  });
+  return calendarDatesUtil(
+    calendarData.datesOfInstruction.start,
+    calendarData.datesOfInstruction.end,
+  );
 }
 
 export function calendarWeeks(): CalendarWeek[] {
-  return eachWeekOfInterval({
-    start: parseCalendarDate(calendarData.datesOfInstruction.start),
-    end: parseCalendarDate(calendarData.datesOfInstruction.end),
-  }).map((weekCurrent: Date): CalendarWeek => {
-    return {
-      startDate: datefnsFormat(weekCurrent, "yyyy-MM-dd"),
-      dates: eachDayOfInterval({
-        start: clampDate(weekCurrent, {
-          start: parseCalendarDate(calendarData.datesOfInstruction.start),
-          end: parseCalendarDate(calendarData.datesOfInstruction.end),
-        }),
-        end: clampDate(endOfWeek(weekCurrent), {
-          start: parseCalendarDate(calendarData.datesOfInstruction.start),
-          end: parseCalendarDate(calendarData.datesOfInstruction.end),
-        }),
-      }).map((dateCurrent): CalendarDate => {
-        return datefnsFormat(dateCurrent, "yyyy-MM-dd");
-      }),
-    };
-  });
+  return calendarWeeksUtil(
+    calendarData.datesOfInstruction.start,
+    calendarData.datesOfInstruction.end,
+  );
 }
 
 export function calendarItems(): CalendarItem[] {
@@ -112,31 +64,7 @@ export function calendarItems(): CalendarItem[] {
 export function calendarItemsForDate(
   calendarDate: CalendarDate,
 ): CalendarItem[] {
-  return calendarItems().filter(
-    (calendarItemCurrent: CalendarItem): boolean => {
-      if ("date" in calendarItemCurrent) {
-        return calendarDate === calendarItemCurrent.date;
-      } else {
-        return calendarItemCurrent.dates.includes(calendarDate);
-      }
-    },
-  );
-}
-
-function verifyCalendarDate(
-  calendarDate: CalendarDate,
-  dayOfWeek: dayOfWeek,
-): CalendarDate {
-  assert(dayOfWeekValues.includes(dayOfWeek));
-
-  const parsedDate = parseCalendarDate(calendarDate);
-  const parsedDateDayOfWeek = datefnsFormat(parsedDate, "EEE");
-  assert(
-    parsedDateDayOfWeek === dayOfWeek,
-    `Date ${calendarDate} is not ${dayOfWeek}`,
-  );
-
-  return calendarDate;
+  return calendarItemsForDateUtil(calendarDate, calendarItems());
 }
 
 export const calendarData: {

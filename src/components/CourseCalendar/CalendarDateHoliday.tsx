@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { ok as assert } from "assert";
 
-import { formatCalendarDate } from "@/data/CalendarData";
+import { formatCalendarDate } from "@/data/CalendarUtils";
 import {
   CalendarDate,
   CalendarItem,

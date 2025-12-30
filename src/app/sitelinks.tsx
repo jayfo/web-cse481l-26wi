@@ -50,10 +50,8 @@ export const SITE_LINKS = [
 
 export const PAGE_LINKS_PAPER_PRESENTATIONS = [
   SiteLinks.assignmentsPaperPresentationsTop,
-  [
-    SiteLinks.assignmentsPaperPresentationsStudentPresentations,
-    SiteLinks.assignmentsPaperPresentationsPresentationLogistics,
-  ],
+  SiteLinks.assignmentsPaperPresentationsStudentPresentations,
+  SiteLinks.assignmentsPaperPresentationsPresentationLogistics,
 ];
 
 export const PAGE_LINKS_TECHNOLOGY_LAB = [

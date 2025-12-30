@@ -20,8 +20,10 @@ export const courseData: CourseData = {
   offering: offeringData,
 
   // Link to UW COVID guidelines.
-  linkUniversityCovidGuidelines: "https://www.ehs.washington.edu/covid-19-prevention-and-response/covid-19-illness-and-exposure-guidance",
+  linkUniversityCovidGuidelines:
+    "https://www.ehs.washington.edu/covid-19-prevention-and-response/covid-19-illness-and-exposure-guidance",
 
   // Link to UW syllabus guidelines.
-  linkUniversitySyllabusGuidelines: "https://registrar.washington.edu/curriculum/syllabus-guidelines",
+  linkUniversitySyllabusGuidelines:
+    "https://registrar.washington.edu/curriculum/syllabus-guidelines",
 } as const;

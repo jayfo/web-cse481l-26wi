@@ -24,14 +24,20 @@ export const offeringData: OfferingData = {
   // Link to Canvas.
   linkCanvas: "https://canvas.uw.edu/courses/1860401",
   // Link to Canvas Paper Presentations.
-  linkCanvasPaperPresentation1DraftSlides: "https://canvas.uw.edu/courses/1860401/assignments/10964899",
-  linkCanvasPaperPresentation1ContributionStatement: "https://canvas.uw.edu/courses/1860401/assignments/10964898",
-  linkCanvasPaperPresentation2DraftSlides: "https://canvas.uw.edu/courses/1860401/assignments/10964901",
-  linkCanvasPaperPresentation2ContributionStatement: "https://canvas.uw.edu/courses/1860401/assignments/10964900",
+  linkCanvasPaperPresentation1DraftSlides:
+    "https://canvas.uw.edu/courses/1860401/assignments/10964899",
+  linkCanvasPaperPresentation1ContributionStatement:
+    "https://canvas.uw.edu/courses/1860401/assignments/10964898",
+  linkCanvasPaperPresentation2DraftSlides:
+    "https://canvas.uw.edu/courses/1860401/assignments/10964901",
+  linkCanvasPaperPresentation2ContributionStatement:
+    "https://canvas.uw.edu/courses/1860401/assignments/10964900",
   // Link to Drive.
-  linkDrive: "https://drive.google.com/drive/folders/1Ay16rlUBGUL_mCZ6btF0da6jfsCEKWNp?usp=sharing",
+  linkDrive:
+    "https://drive.google.com/drive/folders/1Ay16rlUBGUL_mCZ6btF0da6jfsCEKWNp?usp=sharing",
   // Link to Drive document for presentation signup.
-  linkDrivePresentationSignup: "https://docs.google.com/spreadsheets/d/1dkXhZMsL--e_lmMuVbzRLWUhrDm1vOCLKO3glksqKBo/edit?usp=sharing",
+  linkDrivePresentationSignup:
+    "https://docs.google.com/spreadsheets/d/1dkXhZMsL--e_lmMuVbzRLWUhrDm1vOCLKO3glksqKBo/edit?usp=sharing",
   // Link to Ed.
   linkEdDiscussion: "https://edstem.org/us/courses/77347/discussion",
   // Link to course GitLab, used for student assignments.
@@ -48,4 +54,3 @@ export const offeringData: OfferingData = {
 //     // Link to Ed.
 //     linkEdDiscussion: "https://edstem.org/us/courses/77347/discussion",
 //   } as const;
-  

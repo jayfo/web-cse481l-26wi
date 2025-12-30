@@ -5,13 +5,13 @@ import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { default as ContentContributionsInHCI } from "@/content/ContributionsInHCI.mdx";
 import { default as ContentNoReading } from "@/content/NoReading.mdx";
 import { default as ContentVisionsOfHCI } from "@/content/VisionsOfHCI.mdx";
-import { SiteLinks } from "@/data/SiteLinks";
 import {
-  verifyCalendarDate,
   calendarDates as calendarDatesUtil,
-  calendarWeeks as calendarWeeksUtil,
   calendarItemsForDate as calendarItemsForDateUtil,
+  calendarWeeks as calendarWeeksUtil,
+  verifyCalendarDate,
 } from "@/data/CalendarUtils";
+import { SiteLinks } from "@/data/SiteLinks";
 import {
   AssignmentCalendarItem,
   AwayCalendarItem,

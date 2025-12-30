@@ -94,14 +94,11 @@ export function calendarItemsForDate(
   calendarDate: CalendarDate,
   calendarItems: CalendarItem[],
 ): CalendarItem[] {
-  return calendarItems.filter(
-    (calendarItemCurrent: CalendarItem): boolean => {
-      if ("date" in calendarItemCurrent) {
-        return calendarDate === calendarItemCurrent.date;
-      } else {
-        return calendarItemCurrent.dates.includes(calendarDate);
-      }
-    },
-  );
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    if ("date" in calendarItemCurrent) {
+      return calendarDate === calendarItemCurrent.date;
+    } else {
+      return calendarItemCurrent.dates.includes(calendarDate);
+    }
+  });
 }
-

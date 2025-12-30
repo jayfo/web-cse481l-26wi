@@ -5,6 +5,8 @@ import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { default as ContributionStatementsReference } from "@/content/ContributionStatementsReference.mdx";
 import { courseData } from "@/data/CourseData";
+import { calendarData } from "@/data/CalendarData";
+import { formatCalendarDate } from "@/data/CalendarUtils";
 import { Paths } from "@/paths";
 import { GlobalStyles } from '@mui/material';
 
@@ -95,7 +97,7 @@ Ensure the full code of your prototype is committed to your GitLab project:
   If so, clearly document such additional necessary configuration in the README.
 - Be responsive to any questions from the course staff regarding your prototype.
 
-**Due:** Fri Apr 18, 8pm
+**Due:** {formatCalendarDate(calendarData.assignments.labDeliverables.date, "EEE MMM d")}, 8pm
 
 &nbsp;
 
@@ -106,7 +108,7 @@ Submit a video demonstrating key functionality of your prototype:
 
 Submit via Canvas.
 
-**Due:** Fri Apr 18, 8pm
+**Due:** {formatCalendarDate(calendarData.assignments.labDeliverables.date, "EEE MMM d")}, 8pm
 
 &nbsp;
 
@@ -139,11 +141,11 @@ Include the following sections:
 
 Submit via Canvas.
 
-**Due:** Fri Apr 18, 8pm
+**Due:** {formatCalendarDate(calendarData.assignments.labDeliverables.date, "EEE MMM d")}, 8pm
 
 &nbsp;
 
-### Slides and Presentation
+### Slides and Presentations
 
 Prepare and present your technology lab in 1 or 2 slides, in the provided presentation shared by the entire class:
 - Include images that convey key aspects of your prototype.
@@ -151,9 +153,10 @@ Prepare and present your technology lab in 1 or 2 slides, in the provided presen
 
 Presentation will be limited to 3 minutes, with additional time for questions and discussion.
 
-**Slide Due:** Fri Apr 18, 8pm
+**Slides Due:** {formatCalendarDate(calendarData.assignments.labDeliverables.date, "EEE MMM d")}, 8pm
 
-**Presentation:** In-Class, Tue Apr 22
+**Presentations:** In-Class, {formatCalendarDate(calendarData.assignments.labPresentationsDay1.date, "EEE MMM d")}
+and {formatCalendarDate(calendarData.assignments.labPresentationsDay2.date, "EEE MMM d")}
 
 &nbsp;
 

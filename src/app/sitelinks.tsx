@@ -64,7 +64,7 @@ export const PAGE_LINKS_TECHNOLOGY_LAB = [
     SiteLinks.assignmentsTechnologyLabGitLabCode,
     SiteLinks.assignmentsTechnologyLabVideoDemonstration,
     SiteLinks.assignmentsTechnologyLabReflection,
-    SiteLinks.assignmentsTechnologyLabSlidesAndPresentation,
+    SiteLinks.assignmentsTechnologyLabSlidesAndPresentations,
   ],
   SiteLinks.assignmentsTechnologyLabExamples,
   [

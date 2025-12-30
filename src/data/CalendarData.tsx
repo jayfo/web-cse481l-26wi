@@ -86,19 +86,25 @@ export const calendarData: {
   },
 
   assignments: {
-    // labSlidesAndVideo: {
-    //   type: "assignment",
-    //   title:
-    //     "Technology Lab: GitLab Code, Video Demonstration, Reflection, Slide",
-    //   link: SiteLinks.assignmentsProjectTop.href,
-    //   date: verifyCalendarDate("2025-04-18", "Fri"),
-    // },
-    // labPresentation: {
-    //   type: "assignment",
-    //   title: "Technology Lab: Presentation",
-    //   link: SiteLinks.assignmentsProjectTop.href,
-    //   date: verifyCalendarDate("2025-04-22", "Tue"),
-    // },
+    labDeliverables: {
+      type: "assignment",
+      title:
+        "Technology Lab: GitLab Code, Video Demonstration, Reflection, Slides",
+      link: SiteLinks.assignmentsTechnologyLabDeliverables.href,
+      date: verifyCalendarDate("2026-01-25", "Sun"),
+    },
+    labPresentationsDay1: {
+      type: "assignment",
+      title: "Technology Lab: Presentations",
+      link: SiteLinks.assignmentsTechnologyLabDeliverables.href,
+      date: verifyCalendarDate("2026-01-27", "Tue"),
+    },
+    labPresentationsDay2: {
+      type: "assignment",
+      title: "Technology Lab: Presentations",
+      link: SiteLinks.assignmentsTechnologyLabDeliverables.href,
+      date: verifyCalendarDate("2026-01-29", "Thu"),
+    },
 
     projectIntroductionAndIdeaSlides: {
       type: "assignment",

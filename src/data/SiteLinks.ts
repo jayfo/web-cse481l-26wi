@@ -55,9 +55,9 @@ export const SiteLinks = {
     href: "/assignments/lab/#reflection",
     anchor: "Reflection",
   },
-  assignmentsTechnologyLabSlidesAndPresentation: {
-    href: "/assignments/lab/#slides-and-presentation",
-    anchor: "Slides and Presentation",
+  assignmentsTechnologyLabSlidesAndPresentations: {
+    href: "/assignments/lab/#slides-and-presentations",
+    anchor: "Slides and Presentations",
   },
   assignmentsTechnologyLabExamples: {
     href: "/assignments/lab/#examples",

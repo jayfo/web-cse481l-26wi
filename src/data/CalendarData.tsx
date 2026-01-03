@@ -166,6 +166,12 @@ export const calendarData: {
       link: SiteLinks.assignmentsProjectTop.href,
       date: verifyCalendarDate("2026-03-08", "Sun"),
     },
+    projectSlides: {
+      type: "assignment",
+      title: "Project: Slides",
+      link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2026-03-09", "Mon"),
+    },
     projectPresentation: {
       type: "assignment",
       title: "Project: Presentation",

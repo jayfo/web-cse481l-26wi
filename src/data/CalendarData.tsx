@@ -285,6 +285,7 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Designing for Human-AI Interaction",
+      tbd: true,
       discussionPapers: [
         // {
         //   authorText:
@@ -327,6 +328,7 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Designing for Human-AI Interaction",
+      tbd: true,
       discussionPapers: [
         // {
         //   authorText:
@@ -350,6 +352,7 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Designing for Human-AI Interaction",
+      tbd: true,
       discussionPapers: [
         // {
         //   authorText: "Joshua Gorniak, Yoon Kim, Donglai Wei, Nam Wook Kim",
@@ -389,12 +392,14 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "TBD",
+      tbd: true,
     },
     {
       date: verifyCalendarDate("2026-02-05", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "TBD",
+      tbd: true,
     },
 
     // Week 6
@@ -404,12 +409,14 @@ export const calendarData: {
       type: "lecture",
       // title: "Project Meetings",
       title: "TBD",
+      tbd: true,
     },
     {
       date: verifyCalendarDate("2026-02-12", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "TBD",
+      tbd: true,
       // title: "Human-AI Interaction in Context",
       // discussionPapers: [
       //   {
@@ -467,6 +474,7 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "TBD",
+      tbd: true,
       // title: "Human-AI Interaction in Industry",
       // guest: {
       //   name: "Amanda Swearngin",
@@ -481,21 +489,6 @@ export const calendarData: {
       //     link: "https://canvas.uw.edu/files/134336791/",
       //   },
       // ],
-    },
-    {
-      date: verifyCalendarDate("2026-02-26", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "TBD",
-      // title: "Project Working Time",
-    },
-
-    // Week 9
-    {
-      date: verifyCalendarDate("2026-03-03", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "TBD",
       // title: "Human-AI Interaction in Industry",
       // guest: {
       //   name: "Gagan Bansal",
@@ -511,6 +504,22 @@ export const calendarData: {
       //     link: "https://canvas.uw.edu/files/134605309/",
       //   },
       // ],
+    },
+    {
+      date: verifyCalendarDate("2026-02-26", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+      tbd: true,
+      // title: "Project Working Time",
+    },
+
+    // Week 9
+    {
+      date: verifyCalendarDate("2026-03-03", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "Project Working Time",
     },
     {
       date: verifyCalendarDate("2026-03-05", "Thu"),

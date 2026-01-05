@@ -339,7 +339,8 @@ export const calendarData: {
         {
           authorText:
             "Mike A. Merrill, Akshay Paruchuri, Naghmeh Rezaei, Geza Kovacs, Javier Perez, Yun Liu, Erik Schenck, Nova Hammerquist, Jake Sunshine, Shyam Tailor, Kumar Ayush, Hao-Wei Su, Qian He, Cory Y. McLean, Mark Malhotra, Shwetak Patel, Jiening Zhan, Tim Althoff, Daniel McDuff, Xin Liu",
-          title: "Transforming Wearable Data into Personal Health Insights using Large Language Model Agents",
+          title:
+            "Transforming Wearable Data into Personal Health Insights using Large Language Model Agents",
           publicationText: "arXiv. 2024",
           link: "https://canvas.uw.edu/files/143607301/",
         },

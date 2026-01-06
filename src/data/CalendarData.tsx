@@ -327,7 +327,6 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Designing for Human-AI Interaction",
-      tbd: true,
       discussionPapers: [
         {
           authorText:
@@ -351,7 +350,6 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Designing for Human-AI Interaction",
-      tbd: true,
       discussionPapers: [
         {
           authorText:
@@ -391,22 +389,20 @@ export const calendarData: {
       date: verifyCalendarDate("2026-02-03", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Human-AI Interaction in Context",
-      tbd: true,
+      title: "Designing for Human-AI Interaction",
       discussionPapers: [
         {
-          authorText: "Jijie Zhou, Eryue Xu, Yaoyao Wu, Tianshi Li",
-          title:
-            "Rescriber: Smaller-LLM-Powered User-Led Data Minimization for LLM-Based Chatbots",
+          authorText:
+            "Will Epperson, Gagan Bansal, Victor C Dibia, Adam Fourney, Jack Gerrits, Erkang (Eric) Zhu, Saleema Amershi",
+          title: "Interactive Debugging and Steering of Multi-Agent AI Systems",
           publicationText: "CHI 2025",
-          link: "https://canvas.uw.edu/files/143607325/",
+          link: "https://canvas.uw.edu/files/143723234/",
         },
         {
-          authorText:
-            "Weiran Lin, Anna Gerchanovsky, Omer Akgul, Lujo Bauer, Matt Fredrikson, Zifan Wang",
-          title: "LLM Whisperer: An Inconspicuous Attack to Bias LLM Responses",
-          publicationText: "CHI 2025",
-          link: "https://canvas.uw.edu/files/143607324/",
+          authorText: "Yi-Hao Peng, Dingzeyu Li, Jeffrey P Bigham, Amy Pavel",
+          title: "Morae: Proactively Pausing UI Agents for User Choices",
+          publicationText: "UIST 2025",
+          link: "https://canvas.uw.edu/files/143723235/",
         },
       ],
     },
@@ -425,22 +421,20 @@ export const calendarData: {
       title: "Human-AI Interaction in Context",
       discussionPapers: [
         {
-          authorText: "Dhruv Agarwal, Mor Naaman, Aditya Vashistha",
+          authorText: "Jijie Zhou, Eryue Xu, Yaoyao Wu, Tianshi Li",
           title:
-            "AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances",
+            "Rescriber: Smaller-LLM-Powered User-Led Data Minimization for LLM-Based Chatbots",
           publicationText: "CHI 2025",
-          link: "https://canvas.uw.edu/files/143607358/",
+          link: "https://canvas.uw.edu/files/143607325/",
         },
         {
           authorText:
-            "Aaleyah Lewis, Aayushi Dangol, Hyewon Suh, Abbie Olszewski, James Fogarty, Julie A. Kientz",
-          title:
-            "Exploring AI-Based Support in Speech-Language Pathology for Culturally and Linguistically Diverse Children",
+            "Weiran Lin, Anna Gerchanovsky, Omer Akgul, Lujo Bauer, Matt Fredrikson, Zifan Wang",
+          title: "LLM Whisperer: An Inconspicuous Attack to Bias LLM Responses",
           publicationText: "CHI 2025",
-          link: "https://canvas.uw.edu/files/143607365/",
+          link: "https://canvas.uw.edu/files/143607324/",
         },
       ],
-      tbd: true,
     },
     {
       date: verifyCalendarDate("2026-02-12", "Thu"),
@@ -468,16 +462,30 @@ export const calendarData: {
       date: verifyCalendarDate("2026-02-24", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
-      tbd: true,
+      title: "Human-AI Interaction in Context",
+      discussionPapers: [
+        {
+          authorText: "Dhruv Agarwal, Mor Naaman, Aditya Vashistha",
+          title:
+            "AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances",
+          publicationText: "CHI 2025",
+          link: "https://canvas.uw.edu/files/143607358/",
+        },
+        {
+          authorText:
+            "Aaleyah Lewis, Aayushi Dangol, Hyewon Suh, Abbie Olszewski, James Fogarty, Julie A. Kientz",
+          title:
+            "Exploring AI-Based Support in Speech-Language Pathology for Culturally and Linguistically Diverse Children",
+          publicationText: "CHI 2025",
+          link: "https://canvas.uw.edu/files/143607365/",
+        },
+      ],
     },
     {
       date: verifyCalendarDate("2026-02-26", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
-      tbd: true,
-      // title: "Project Working Time",
+      title: "Project Working Time",
     },
 
     // Week 9

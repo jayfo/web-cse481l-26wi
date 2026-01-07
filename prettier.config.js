@@ -20,6 +20,9 @@ const prettierConfig = {
   ],
   importOrderParserPlugins: ["typescript", "jsx", "decorators"],
   importOrderTypeScriptVersion: "5.0.0",
+  
+  // Ensure consistent line endings to match Git normalization
+  endOfLine: "lf",
 };
 
 module.exports = prettierConfig;

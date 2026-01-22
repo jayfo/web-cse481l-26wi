@@ -10,6 +10,8 @@ export type OfferingData = {
   linkCanvasPaperPresentation2ContributionStatement: CourseDataLinkHREF;
   // Link to Drive.
   linkDrive: CourseDataLinkHREF;
+  // Link to Drive document for guidelines.
+  linkDriveGuidelines: CourseDataLinkHREF;
   // Link to Drive document for presentation signup.
   linkDrivePresentationSignup: CourseDataLinkHREF;
   // Link to Ed.
@@ -43,6 +45,9 @@ export const offeringData: OfferingData = {
   // Link to Drive.
   linkDrive:
     "https://drive.google.com/drive/folders/1Ay16rlUBGUL_mCZ6btF0da6jfsCEKWNp?usp=sharing",
+  // Link to Drive document for guidelines.
+  linkDriveGuidelines:
+    "https://docs.google.com/document/d/190MlM2nZhkySmkTffdUTBRQFs_n23BxJdu5rjenApvo/edit?usp=sharing",
   // Link to Drive document for presentation signup.
   linkDrivePresentationSignup:
     "https://docs.google.com/spreadsheets/d/1FI3J-o9GSNrhoZ0JayuCNXtjU8mrbMhOvtrR6poyEzU/edit?usp=sharing",
@@ -65,16 +70,3 @@ export const offeringData: OfferingData = {
   // Link to course GitHub, used for this website.
   linkGitHub: "https://github.com/uwcse481/web-cse481l-26wi",
 } as const;
-
-// Data from previous offering. To help track what still needs updated.
-//
-// Still need to update:
-//   linkGitLabExample1
-//   linkGitLabExample1Commit1
-//   linkGitLabExample1Commit2
-//   linkGitLabExample2
-//
-// export const offeringData: OfferingData = {
-//     // Link to Drive document for presentation signup.
-//     linkDrivePresentationSignup: "https://docs.google.com/spreadsheets/d/1dkXhZMsL--e_lmMuVbzRLWUhrDm1vOCLKO3glksqKBo/edit?usp=sharing",
-//   } as const;

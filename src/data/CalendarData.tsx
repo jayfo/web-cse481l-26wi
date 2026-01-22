@@ -86,6 +86,12 @@ export const calendarData: {
   },
 
   assignments: {
+    labGroupsFinalized: {
+      type: "assignment",
+      title: "Technology Lab: Groups Finalized",
+      link: SiteLinks.assignmentsProjectGroupsFinalized.href,
+      date: verifyCalendarDate("2026-01-15", "Thu"),
+    },
     labDeliverables: {
       type: "assignment",
       title:
